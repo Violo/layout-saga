@@ -9,10 +9,32 @@
     </head>
     <body>
         <h1>Layout Saga</h1>
-        <h2>A collection of layout tecniques</h2>
-        <ul>
-            <li><a href="layout_position_absolute.html">Layout in position fixed</a></li>
-            <li><a href="layout_position_fixed.html">Layout in position absolute</a></li>
+        <h2>A collection of layout techniques</h2>
+        <ul class="layout_list">    
+            <li class="layout_list__item">
+                <a href="layout_position_fixed_wrapper.html">Layout in position fixed</a> [old browser - <a href="https://twitter.com/violo">@Violo</a> solution]
+                <ul class="layout_list__item__sublist">
+                    <li>fully compatible with old browser (IE6 included)</li>
+                    <li>no use of <code>calc</code> value for operation</li>
+                    <li>no use of both <code>top:0; bottom:0;</code></li>
+                    <li>spacing layout model by couple of div and <code>padding</code></li>
+                </ul>
+            </li>
+            <li>
+                <a href="layout_position_absolute.html">Layout in position fixed</a>
+                <ul class="layout_list__item__sublist">
+                    <li>not compatibile with old browser (IE6-7-8, CH18, FF3.x SA5.x)</li>
+                    <li>use of <code>calc</code> value for operation</li>
+                </ul>
+            </li>
+            <li>
+                <a href="layout_position_fixed.html">Layout in position absolute</a>
+                <ul class="layout_list__item__sublist">
+                    <li>not compatibile with old browser (IE6)</li>
+                    <li>use of both <code>top:0; bottom:0;</code></li>
+                    <li>nestable layout</li>
+                </ul>
+            </li>
         </ul>
     </body>
 </html>

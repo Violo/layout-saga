@@ -21,3 +21,11 @@ body{
 h2{
     margin-bottom:100px;
 }
+.layout_list{
+    .layout_list__item__sublist{
+        list-style-type:circle;
+        font-size:11px;
+        margin:5px 0 15px 0;
+        padding:0 0 0 20px;
+    }
+}
