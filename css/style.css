@@ -1,16 +1,25 @@
 body {
-  padding: 50px;
+  padding: 30px 50px 20px 50px;
   font-family: Helvetica, Arial, sans-serif;
   color: #444444;
   background-color: white; }
 
 h2 {
-  margin-bottom: 100px; }
+  margin-bottom: 60px; }
 
 .layout_list .layout_list__item__sublist {
   list-style-type: circle;
   font-size: 11px;
   margin: 5px 0 15px 0;
   padding: 0 0 0 20px; }
+
+.m-pros {
+  color: green; }
+
+.m-cons {
+  color: red; }
+
+.m-warning {
+  color: orange; }
 
 /*# sourceMappingURL=style.css.map */

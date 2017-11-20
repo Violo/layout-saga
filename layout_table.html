@@ -1,18 +1,49 @@
 <!DOCTYPE html>
 <html lang="it">
     <head>
-        <title>Layout in position fixed</title>
+        <title>Layout: in table</title>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-        <link rel="stylesheet" href="css/style_layout_position_fixed.css" media="all">
+        <link rel="stylesheet" href="css/style_layout_table.css" media="all">
     </head>
     <body>
+        <table class="l-table_layout">
+            <thead class="l-main_header">
+                <tr>
+                    <th colspan="2">HEADER</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="l-main_aside">
+                        ASIDE
+                    </td>
+                    <td class="l-main_article_side">
+                        <div class="l-main_article_side__inner">
+                            SUB ARTICLE<br />SUB ARTICLE<br />SUB ARTICLE<br />SUB ARTICLE<br />SUB ARTICLE<br />
+                            SUB ARTICLE<br />SUB ARTICLE<br />SUB ARTICLE<br />SUB ARTICLE<br />SUB ARTICLE<br />
+                            SUB ARTICLE<br />SUB ARTICLE<br />SUB ARTICLE<br />SUB ARTICLE<br />SUB ARTICLE<br />
+                            SUB ARTICLE<br />SUB ARTICLE<br />SUB ARTICLE<br />SUB ARTICLE<br />SUB ARTICLE<br />
+                            SUB ARTICLE<br />SUB ARTICLE<br />SUB ARTICLE<br />SUB ARTICLE<br />SUB ARTICLE<br />
+                            SUB ARTICLE<br />SUB ARTICLE<br />SUB ARTICLE<br />SUB ARTICLE<br />SUB ARTICLE<br />
+                            SUB ARTICLE<br />SUB ARTICLE<br />SUB ARTICLE<br />SUB ARTICLE<br />SUB ARTICLE<br />
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot class="l-main_footer">
+                <tr>
+                    <td colspan="2">FOOTER</td>
+                </tr>
+            </tfoot>
+        </table>
+        <!-- 
         <header class="l-main_header">
-            HEADER
+            
         </header>
         <aside class="l-main_aside">
-            ASIDE
+            
         </aside>
         <article class="l-main_article_side">
             <header class="l-sub_header">
@@ -43,6 +74,6 @@
         </article>
         <footer class="l-main_footer">
             FOOTER
-        </footer>
+        </footer> -->
     </body>
 </html>

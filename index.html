@@ -11,28 +11,44 @@
         <h1>Layout Saga</h1>
         <h2>A collection of layout techniques</h2>
         <ul class="layout_list">    
+            <li>
+                <a href="layout_position_fixed.html">Layout in position fixed</a>
+                <ul class="layout_list__item__sublist">
+                    <li class="m-cons">not compatibile with old browser (IE6-7-8, CH18, FF3.x, SA5.x)</li>
+                    <li class="m-warning">use of <code>calc</code> value for operation</li>
+                </ul>
+            </li>
             <li class="layout_list__item">
-                <a href="layout_position_fixed_wrapper.html">Layout in position fixed</a> [old browser - <a href="https://twitter.com/violo">@Violo</a> solution]
+                <a href="layout_position_fixed_wrapper.html">Layout in position fixed (with padding wrapper)</a>
                 <ul class="layout_list__item__sublist">
-                    <li>fully compatible with old browser (IE6 included)</li>
-                    <li>no use of <code>calc</code> value for operation</li>
-                    <li>no use of both <code>top:0; bottom:0;</code></li>
-                    <li>spacing layout model by couple of div and <code>padding</code></li>
+                    <li class="m-pros">fully compatible with old browser (IE6 included)</li>
+                    <li class="m-pros">no use of <code>calc</code> value for operation</li>
+                    <li class="m-pros">no use of both <code>top:0; bottom:0;</code></li>
+                    <li class="m-pros">spacing layout model by couple of div and <code>padding</code> - <a href="https://twitter.com/violo">@violo</a> solution</li>
                 </ul>
             </li>
             <li>
-                <a href="layout_position_absolute.html">Layout in position fixed</a>
+                <a href="layout_position_absolute.html">Layout in position absolute</a>
                 <ul class="layout_list__item__sublist">
-                    <li>not compatibile with old browser (IE6-7-8, CH18, FF3.x SA5.x)</li>
-                    <li>use of <code>calc</code> value for operation</li>
+                    <li class="m-pros">nestable layout</li>
+                    <li class="m-cons">not compatibile with old browser (IE6)</li>
+                    <li class="m-warning">use of both <code>top:0; bottom:0;</code></li>
                 </ul>
             </li>
             <li>
-                <a href="layout_position_fixed.html">Layout in position absolute</a>
+                <a href="layout_position_absolute_relative.html">Layout in position absolute (with viewport relative units)</a>
                 <ul class="layout_list__item__sublist">
-                    <li>not compatibile with old browser (IE6)</li>
-                    <li>use of both <code>top:0; bottom:0;</code></li>
-                    <li>nestable layout</li>
+                    <li class="m-pros">nestable layout</li>
+                    <li class="m-cons">not compatibile with old browser (IE6-7-8, CH19, FF18, SA5.x, O19)</li>
+                    <li class="m-warning">use of <code>vh vw</code> viewport relative units</li>
+                </ul>
+            </li>
+            <li>
+                <a href="layout_table.html">Layout in table</a>
+                <ul class="layout_list__item__sublist">
+                    <li class="m-pros">nestable layout</li>
+                    <li class="m-pros">fully compatible with <strong>very</strong> old browser (IE5.5 included)</li>
+                    <li class="m-pros">use of CSS2 standard properties</li>
                 </ul>
             </li>
         </ul>
