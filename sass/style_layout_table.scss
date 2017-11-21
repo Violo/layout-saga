@@ -27,6 +27,9 @@ $l-sub_nav2-height:25px;
 *{
     box-sizing:border-box;
 }
+html{
+    height:100%;
+}
 body{
     height:100%;
     overflow:hidden;
@@ -39,11 +42,10 @@ body{
 // Layout
 .l-table_layout{
     width:100%;
-    height:100vh;
+    height:100%;
     margin:0;
     padding:0;
     border-collapse:collapse;
-    box-sizing:border-box;
     th,
     td{
         vertical-align:top;
@@ -74,4 +76,32 @@ body{
     td{
         height:$l-main_footer-height;
     }
+}
+.l-sub_header{
+    background-color:$secondary-color;
+    th{
+        height:$l-sub_header-height;
+    }
+}
+.l-sub_footer{
+    background-color:$secondary-color;
+    td{
+        height:$l-sub_footer-height;
+    }
+}
+.l-sub_article{
+    background-color:$neutral-white;
+    .l-sub_article__inner{
+        height:100%;
+        overflow-y:auto;
+        border-bottom:1px solid $neutral-white;
+    }
+}
+.l-sub_nav{
+    height:$l-sub_nav-height;
+    background-color:$secondary-color-20;
+}
+.l-sub_nav2{
+    height:$l-sub_nav2-height;
+    background-color:$secondary-color-30;
 }
