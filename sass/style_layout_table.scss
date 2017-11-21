@@ -3,9 +3,7 @@
 // Content:
 // - Variables
 // - General
-// - Layout mixin
 // - Layout collection
-// - Layout scroll collection
 
 // Variables
 $neutral-white:#ffffff;
@@ -39,7 +37,7 @@ body{
     color:$text-color;
 }
 
-// Layout
+// Layout collection
 .l-table_layout{
     width:100%;
     height:100%;
