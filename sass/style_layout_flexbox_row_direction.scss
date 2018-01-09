@@ -1,4 +1,4 @@
-// Style Layout FlexBox
+// Style Layout FlexBox (row direction)
 
 // Content:
 // - Variables
@@ -37,7 +37,7 @@ body{
 // Layout mixin
 @mixin l-flex_element{
     order:1;
-    flex:1 1 100vw;
+    flex:1 1 100%;
     @content;
 }
 
