@@ -1,0 +1,102 @@
+// Style Layout FlexBox
+
+// Content:
+// - Variables
+// - General
+// - Layout mixin
+// - Layout collection
+// - Layout scroll collection
+
+// Variables
+$neutral-white:#ffffff;
+$text-color:#444444;
+$primary-color:#199ECB;
+$primary-color-40:lighten($primary-color, 40%);
+$secondary-color:#DDDA2F;
+$secondary-color-20:lighten($secondary-color, 20%);
+$secondary-color-30:lighten($secondary-color, 30%);
+$l-main_header-height:80px;
+$l-main_footer-height:40px;
+$l-main_aside-width:180px;
+$l-sub_header-height:40px;
+$l-sub_footer-height:25px;
+$l-sub_nav-height:25px;
+$l-sub_nav2-height:25px;
+
+// General
+*{
+    box-sizing:border-box;
+}
+html{
+    height:100%;
+}
+body{
+    margin:0;
+    padding:0;
+    font-family:Helvetica, Arial, sans-serif;
+    color:$text-color;
+    height:100%;
+}
+
+// Layout mixin
+@mixin l-container_flex_column{
+    display:flex;
+    flex-flow:column nowrap;
+    height:100%;
+    @content;
+}
+@mixin l-container_flex_row{
+    display:flex;
+    flex:1 0;
+    @content;
+}
+
+// Layout collection
+.l-layout_wrapper{
+    @include l-container_flex_column;
+}
+.l-columns-container{
+    @include l-container_flex_row;
+    order:2;
+}
+.l-row-container{
+    @include l-container_flex_column;
+}
+
+.l-main_header{
+    flex:0 0 $l-main_header-height;
+    order:1;
+    background-color:$primary-color;
+}
+.l-main_footer{
+    flex:0 0 $l-main_footer-height;
+    order:3;
+    background-color:$primary-color;
+}
+.l-main_article{
+    flex:1 1 auto;
+    order:2;
+    overflow-y:auto;
+}
+.l-main_aside{
+    order:1;
+    width:$l-main_aside-width;
+    background-color:$primary-color-40;
+}
+.l-sub_header{
+    flex:0 0 $l-sub_header-height;
+    background-color:$secondary-color;
+}
+.l-sub_footer{
+    flex:0 0 $l-sub_footer-height;
+    background-color:$secondary-color;
+    order:5;
+}
+.l-sub_nav{
+    flex:0 0 $l-sub_nav-height;
+    background-color:$secondary-color-20;
+}
+.l-sub_nav2{
+    flex:0 0 $l-sub_nav2-height;
+    background-color:$secondary-color-30;
+}

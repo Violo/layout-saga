@@ -17,27 +17,27 @@ body {
 
 .l-main_header, .l-sub_header {
   order: 1;
-  flex: 1 1 100%;
+  flex: 1 1 100vw;
   height: 80px;
   background-color: #199ECB; }
 
 .l-main_footer, .l-sub_footer {
   order: 1;
-  flex: 1 1 100%;
+  flex: 1 1 100vw;
   order: 4;
   height: 40px;
   background-color: #199ECB; }
 
 .l-main_aside {
   order: 1;
-  flex: 1 1 100%;
+  flex: 1 1 100vw;
   order: 2;
   flex: 0 1 180px;
   background-color: #bae7f6; }
 
 .l-main_article, .l-sub_article {
   order: 1;
-  flex: 1 1 100%;
+  flex: 1 1 100vw;
   order: 3;
   flex: 1 1 auto;
   height: calc(100vh - 120px);
@@ -68,4 +68,4 @@ body {
 .l-sub_nav ~ .l-sub_nav2 ~ .l-sub_article {
   height: calc(100vh - 235px); }
 
-/*# sourceMappingURL=style_layout_flexbox.css.map */
+/*# sourceMappingURL=style_layout_flexbox_row_direction.css.map */
