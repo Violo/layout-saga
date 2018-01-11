@@ -54,7 +54,7 @@ body {
 .l-sub_header {
   position: fixed;
   height: 40px;
-  width: calc(100% - 180px);
+  width: 100%;
   top: 80px;
   left: 180px;
   background-color: #DDDA2F;
@@ -63,7 +63,7 @@ body {
 .l-sub_footer {
   position: fixed;
   height: 25px;
-  width: calc(100% - 180px);
+  width: 100%;
   bottom: 40px;
   left: 180px;
   background-color: #DDDA2F;

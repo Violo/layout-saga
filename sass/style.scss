@@ -22,12 +22,18 @@ h2{
     margin-bottom:60px;
 }
 .layout_list{
+    margin-bottom:40px;
     .layout_list__item__sublist{
         list-style-type:circle;
         font-size:11px;
         margin:5px 0 15px 0;
         padding:0 0 0 20px;
     }
+}
+
+.reference{
+    font-size:10px;
+    text-align:center;
 }
 
 .m-pros{

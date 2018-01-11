@@ -92,7 +92,7 @@ body{
 .l-sub_header{
     position:fixed;    
     height:$l-sub_header-height;
-    width:calc(100% - #{$l-main_aside-width});
+    width:100%;
     top:$l-main_header-height;
     left:$l-main_aside-width;
     background-color:$secondary-color;
@@ -101,7 +101,7 @@ body{
 .l-sub_footer{
     position:fixed;
     height:$l-sub_footer-height;
-    width:calc(100% - #{$l-main_aside-width});
+    width:100%;
     bottom:$l-main_footer-height;
     left:$l-main_aside-width;
     background-color:$secondary-color;

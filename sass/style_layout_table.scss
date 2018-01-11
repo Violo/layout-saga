@@ -58,15 +58,22 @@ body{
         height:$l-main_header-height;
     }
 }
+.l-table_body{
+    height:85%;
+    .l-table_body{
+        height:80%;
+    }
+}
 .l-main_aside{
     width:$l-main_aside-width;
     background-color:$primary-color-40;
 }
 .l-main_article_side{
     background-color:$neutral-white;
+    height:100%;
     .l-main_article_side__inner{
         height:100%;
-        overflow-y:auto;
+        //overflow-y:auto;
     }
 }
 .l-main_footer{
@@ -89,6 +96,7 @@ body{
 }
 .l-sub_article{
     background-color:$neutral-white;
+    height:100%;
     .l-sub_article__inner{
         height:100%;
         overflow-y:auto;
