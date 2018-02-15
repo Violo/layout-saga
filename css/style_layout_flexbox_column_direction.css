@@ -14,16 +14,7 @@ body {
 .l-layout_wrapper {
   display: flex;
   flex-flow: column nowrap;
-  height: 100%; }
-
-.l-columns-container {
-  display: flex;
-  flex: 1 0;
-  order: 2; }
-
-.l-row-container {
-  display: flex;
-  flex-flow: column nowrap;
+  align-items: stretch;
   height: 100%; }
 
 .l-main_header {
@@ -37,30 +28,53 @@ body {
   background-color: #199ECB; }
 
 .l-main_article {
-  flex: 1 1 auto;
-  order: 2;
-  overflow-y: auto; }
+  flex: 1 1;
+  align-self: stretch;
+  overflow-y: auto;
+  order: 2; }
 
-.l-main_aside {
-  order: 1;
-  width: 180px;
-  background-color: #bae7f6; }
+.l-layout_row_wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  align-content: stretch;
+  align-items: stretch;
+  height: 100%; }
+  .l-layout_row_wrapper .l-main_aside {
+    order: 1;
+    flex: 0 0 180px;
+    background-color: #bae7f6;
+    align-self: stretch; }
+  .l-layout_row_wrapper .l-sub_article {
+    flex: 1 1;
+    align-self: stretch;
+    overflow-y: auto;
+    order: 2; }
 
-.l-sub_header {
-  flex: 0 0 40px;
-  background-color: #DDDA2F; }
-
-.l-sub_footer {
-  flex: 0 0 25px;
-  background-color: #DDDA2F;
-  order: 5; }
-
-.l-sub_nav {
-  flex: 0 0 25px;
-  background-color: #ebea87; }
-
-.l-sub_nav2 {
-  flex: 0 0 25px;
-  background-color: #f2f1b3; }
+.l-layout_column_wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+  height: 100%; }
+  .l-layout_column_wrapper .l-sub_header {
+    flex: 0 0 40px;
+    order: 1;
+    background-color: #DDDA2F; }
+  .l-layout_column_wrapper .l-sub_nav {
+    flex: 0 0 25px;
+    order: 2;
+    background-color: #ebea87; }
+  .l-layout_column_wrapper .l-sub_nav2 {
+    flex: 0 0 25px;
+    order: 3;
+    background-color: #f2f1b3; }
+  .l-layout_column_wrapper .l-sub_article2 {
+    flex: 1 1;
+    align-self: stretch;
+    overflow-y: auto;
+    order: 4; }
+  .l-layout_column_wrapper .l-sub_footer {
+    flex: 0 0 25px;
+    order: 5;
+    background-color: #DDDA2F; }
 
 /*# sourceMappingURL=style_layout_flexbox_column_direction.css.map */

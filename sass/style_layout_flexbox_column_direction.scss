@@ -39,30 +39,32 @@ body{
 }
 
 // Layout mixin
-@mixin l-container_flex_column{
+@mixin layout_column_wrapper{
     display:flex;
     flex-flow:column nowrap;
+    align-items:stretch;
     height:100%;
     @content;
 }
-@mixin l-container_flex_row{
+@mixin layout_row_wrapper{
     display:flex;
-    flex:1 0;
+    flex-flow:row nowrap;
+    align-content:stretch;
+    align-items:stretch;
+    height:100%;
+    @content;
+}
+@mixin layout_content{
+    flex:1 1;
+    align-self:stretch;
+    overflow-y:auto;
     @content;
 }
 
 // Layout collection
 .l-layout_wrapper{
-    @include l-container_flex_column;
+    @include layout_column_wrapper;
 }
-.l-columns-container{
-    @include l-container_flex_row;
-    order:2;
-}
-.l-row-container{
-    @include l-container_flex_column;
-}
-
 .l-main_header{
     flex:0 0 $l-main_header-height;
     order:1;
@@ -74,29 +76,48 @@ body{
     background-color:$primary-color;
 }
 .l-main_article{
-    flex:1 1 auto;
+    @include layout_content;
     order:2;
-    overflow-y:auto;
 }
-.l-main_aside{
-    order:1;
-    width:$l-main_aside-width;
-    background-color:$primary-color-40;
+
+.l-layout_row_wrapper{
+    @include layout_row_wrapper;
+    .l-main_aside{
+        order:1;
+        flex:0 0 $l-main_aside-width;
+        background-color:$primary-color-40;
+        align-self:stretch;
+    }
+    .l-sub_article{
+        @include layout_content;
+        order:2;
+    }
 }
-.l-sub_header{
-    flex:0 0 $l-sub_header-height;
-    background-color:$secondary-color;
-}
-.l-sub_footer{
-    flex:0 0 $l-sub_footer-height;
-    background-color:$secondary-color;
-    order:5;
-}
-.l-sub_nav{
-    flex:0 0 $l-sub_nav-height;
-    background-color:$secondary-color-20;
-}
-.l-sub_nav2{
-    flex:0 0 $l-sub_nav2-height;
-    background-color:$secondary-color-30;
+
+.l-layout_column_wrapper{
+    @include layout_column_wrapper;
+    .l-sub_header{
+        flex:0 0 $l-sub_header-height;
+        order:1;
+        background-color:$secondary-color;
+    }
+    .l-sub_nav{
+        flex:0 0 $l-sub_nav-height;
+        order:2;
+        background-color:$secondary-color-20;
+    }
+    .l-sub_nav2{
+        flex:0 0 $l-sub_nav2-height;
+        order:3;
+        background-color:$secondary-color-30;
+    }
+    .l-sub_article2{
+        @include layout_content;
+        order:4;
+    }
+    .l-sub_footer{
+        flex:0 0 $l-sub_footer-height;
+        order:5;
+        background-color:$secondary-color;
+    }
 }
