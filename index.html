@@ -58,7 +58,16 @@
                 </ul>
             </li>
             <li>
-                <a href="layout_flexbox_row_direction.html">Layout in flex-box (row direction)</a>
+                <a href="layout_float.html">Layout in position absolute (with float)</a>
+                <ul class="layout_list__item__sublist">
+                    <li class="m-pros">nestable layout</li>
+                    <li class="m-pros">automatic scrolling layout with <code>~</code> selector  - <a href="https://twitter.com/violo">@violo</a> technique</li>
+                    <li class="m-warning">use of <code>vh vw</code> viewport relative units</li>
+                    <li class="m-cons">not compatibile with old browser (IE8, FF28, CH28, O21, SA5)</li>
+                </ul>
+            </li>
+            <li>
+                <a href="layout_flexbox_row_direction.html">Layout in flex (row direction)</a>
                 <ul class="layout_list__item__sublist">
                     <li class="m-pros"><strong>very</strong> light and clean code <em>(30% lighter!)</em></li>
                     <li class="m-pros"><strong>very</strong> easy responsive and media query set up <em>(also vertically ordered!)</em></li>
@@ -71,7 +80,7 @@
                 </ul>
             </li>
             <li>
-                <a href="layout_flexbox_column_direction.html">Layout in flex-box (column direction)</a>
+                <a href="layout_flexbox_column_direction.html">Layout in flex (column direction)</a>
                 <ul class="layout_list__item__sublist">
                     <li class="m-pros"><strong>very</strong> light and clean code <em>(30% lighter!)</em></li>
                     <li class="m-pros"><strong>very</strong> easy responsive and media query set up <em>(also vertically ordered!)</em></li>
@@ -82,6 +91,14 @@
             </li>
             <li>
                 <a href="layout_grid.html">Layout in grid</a>
+                <ul class="layout_list__item__sublist">
+                    <li class="m-pros"><strong>very</strong> light and clean code <em>(50% lighter!)</em></li>
+                    <li class="m-pros"><strong>very</strong> clean code and pure semantic html</li>
+                    <li class="m-pros"><strong>very</strong> easy responsive and media query set up <em>(also vertically ordered!)</em></li>
+                    <li class="m-pros">no need to manage scrolling layout</li>
+                    <li class="m-warning">use of <code>grid</code> properties</li>
+                    <li class="m-cons">not compatibile with old browser (IE10, ED14, CH61, FF57, O, SA10)</li>
+                </ul>
             </li>
         </ul>
         <p class="reference">Tested with <a href="http://www.browserstack.com/">BrowserStack</a></p>
